@@ -39,10 +39,7 @@ install -p -m 644 pydf.1 %{buildroot}/%{_mandir}/man1
 
 %changelog
 * Thu Feb 23 2017 Artem Goncharov <artem.goncharov@gmail.com> 12-1
-- new package built with tito
-
-* Thu Feb 23 2017 Artem Goncharov <artem.goncharov@gmail.com> 12-1
-- switch to Python3 
+- new package built with tito, Python3, version bump
 
 * Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 9-10
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
