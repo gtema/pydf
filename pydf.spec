@@ -11,7 +11,6 @@ URL:            https://pypi.python.org/pypi/%{srcname}/%{version}
 Source0:        http://kassiopeia.juls.savba.sk/~garabik/software/%{srcname}/%{name}_%{version}.tar.gz
 
 BuildArch:      noarch
-Requires: %{python3_version}
 
 %description
 pydf displays the amount of used and available space on your file systems,
@@ -39,6 +38,9 @@ install -p -m 644 pydf.1 %{buildroot}/%{_mandir}/man1
 %{_mandir}/man1/pydf.1*
 
 %changelog
+* Thu Feb 23 2017 Artem Goncharov <artem.goncharov@gmail.com> 12-1
+- new package built with tito
+
 * Thu Feb 23 2017 Artem Goncharov <artem.goncharov@gmail.com> 12-1
 - switch to Python3 
 
