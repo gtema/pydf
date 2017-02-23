@@ -11,6 +11,7 @@ URL:            https://pypi.python.org/pypi/%{srcname}/%{version}
 Source0:        http://kassiopeia.juls.savba.sk/~garabik/software/%{srcname}/%{name}_%{version}.tar.gz
 
 BuildArch:      noarch
+BuildRequires:  python3-devel
 
 %description
 pydf displays the amount of used and available space on your file systems,
