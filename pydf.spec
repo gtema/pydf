@@ -2,7 +2,7 @@
 
 Name:           %{srcname}
 Version:        12
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Fully colorized df clone written in python
 Group:          Applications/System
 
@@ -28,8 +28,10 @@ sed -i '1s=^#!\s*/usr/bin/\(python\|env python\)[0-9.]*=#!%{__python3}=' pydf
 %install
 mkdir -p %{buildroot}/%{_bindir}
 mkdir -p %{buildroot}/%{_mandir}/man1
+mkdir -p %{buildroot}/%{_sysconfdir}/man1
 install -p -m 755 pydf %{buildroot}/%{_bindir}
 install -p -m 644 pydf.1 %{buildroot}/%{_mandir}/man1
+install -p -m 644 pydfrc %{buildroot}/%{_sysconfdir}
 
 
 %files
@@ -37,8 +39,12 @@ install -p -m 644 pydf.1 %{buildroot}/%{_mandir}/man1
 %doc README COPYING
 %{_bindir}/pydf
 %{_mandir}/man1/pydf.1*
+%{_sysconfdir}/pydfrc
 
 %changelog
+* Fri Feb 24 2017 Artem Goncharov <artem.goncharov@gmail.com> 12-2
+- new package built with tito, add pydfrc
+
 * Thu Feb 23 2017 Artem Goncharov <artem.goncharov@gmail.com> 12-1
 - new package built with tito, Python3, version bump
 
