@@ -2,7 +2,7 @@
 
 Name:           %{srcname}
 Version:        12
-Release:        2%{?dist}
+Release:        1%{?dist}
 Summary:        Fully colorized df clone written in python
 Group:          Applications/System
 
@@ -42,10 +42,7 @@ install -p -m 644 pydfrc %{buildroot}/%{_sysconfdir}
 %{_sysconfdir}/pydfrc
 
 %changelog
-* Fri Feb 24 2017 Artem Goncharov <artem.goncharov@gmail.com> 12-2
-- new package built with tito, add pydfrc
-
-* Thu Feb 23 2017 Artem Goncharov <artem.goncharov@gmail.com> 12-1
+* Fri Feb 24 2017 Artem Goncharov <artem.goncharov@gmail.com> 12-1
 - new package built with tito, Python3, version bump
 
 * Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 9-10
